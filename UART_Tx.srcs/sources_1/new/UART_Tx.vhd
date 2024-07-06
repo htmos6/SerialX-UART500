@@ -55,7 +55,6 @@ begin
 					if (bit_timer = c_bit_timer_limit - 1) then
 						state <= TRANSMISSION;	
 						tx_line_o <= SHR(0);
-						tx_completed_o <= '0';	 
 						SHR(7) <= SHR(0);
 						SHR(6 downto 0) <= SHR(7 downto 1);
 						
@@ -71,11 +70,9 @@ begin
 						if (bit_counter = 7) then
 							state <= STOP;
 							tx_line_o <= '1';
-							tx_completed_o <= '0';	 
 							bit_counter <= 0;
 						else 
 							tx_line_o <= SHR(0);
-							tx_completed_o <= '0';	 
 							SHR(7) <= SHR(0);
 							SHR(6 downto 0) <= SHR(7 downto 1);
 							bit_counter <= bit_counter + 1;
