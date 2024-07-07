@@ -5,8 +5,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity tb_UART_Tx is
 	generic 
 	(
-		c_clk_frequency : integer := 100_000_000; -- 10 ns for 1 period
-		c_baud_rate : integer := 10_000_000; -- 100 us time for the sent 1 bit
+		c_clk_frequency : integer := 100_000; -- 10 ns for 1 period
+		c_baud_rate : integer := 10_000; -- 100 us time for the sent 1 bit
 		c_num_of_stop_bit : integer := 2
 	);
 end entity;
@@ -72,13 +72,16 @@ begin
 		start_i <= '0';
 
 		wait for c_clk_period * 10;
+		
+		-- Update signals @ the falling_edge to proove design compansates requirements.
+		wait until falling_edge(clk_i);
 		data_i <= x"51";
 		start_i <= '1';
 		
 		wait for c_clk_period;
 		start_i <= '0';
 		
-		wait for 1.2 us;
+		wait for 1.2 ms;
 
 	end process;
 
