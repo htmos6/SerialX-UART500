@@ -2,7 +2,9 @@
 
 ## Description
 
-This repository contains VHDL implementations of UART (Universal Asynchronous Receiver/Transmitter) modules, designed for FPGA-based communication systems. These projects include a UART receiver (UART_Rx) and a UART transmitter (UART_Tx). Each module is designed to handle serial communication with high reliability and accuracy.
+- This repository contains VHDL implementations of UART (Universal Asynchronous Receiver/Transmitter) modules, designed for FPGA-based communication systems.  
+- These projects include a UART receiver (UART_Rx) and a UART transmitter (UART_Tx).
+- Each module is designed to handle serial communication with high reliability and accuracy.
 
 ## Features
 
@@ -32,45 +34,6 @@ This repository contains VHDL implementations of UART (Universal Asynchronous Re
    ```sh
    git clone https://github.com/yourusername/UART-Interface-Projects.git
    cd UART-Interface-Projects
-
-Thank you for providing the second VHDL project file. Here's the complete README.md file for both projects:
-
-```markdown
-# UART Interface Projects
-
-## Description
-
-This repository contains VHDL implementations of UART (Universal Asynchronous Receiver/Transmitter) modules, designed for FPGA-based communication systems. These projects include a UART receiver (UART_Rx) and a UART transmitter (UART_Tx). Each module is designed to handle serial communication with high reliability and accuracy.
-
-## Features
-
-### UART Receiver (UART_Rx)
-- **Configurable Clock Frequency and Baud Rate:** The receiver can be configured with different clock frequencies and baud rates.
-- **State Machine Implementation:** Utilizes a finite state machine (FSM) for reliable data reception.
-- **Debounced Inputs:** Ensures stable operation of the receiver.
-- **Output Signals:** Provides received data and a signal indicating completion of data reception.
-
-### UART Transmitter (UART_Tx)
-- **Configurable Clock Frequency and Baud Rate:** The transmitter can be configured with different clock frequencies and baud rates.
-- **State Machine Implementation:** Utilizes a finite state machine (FSM) for reliable data transmission.
-- **Multiple Stop Bits:** Supports configuration of the number of stop bits.
-- **Output Signals:** Provides a signal indicating completion of data transmission.
-
-## Setup Instructions
-
-### Prerequisites
-
-- Xilinx Vivado Design Suite
-- FPGA development board (e.g., Xilinx FPGA)
-- Knowledge of VHDL and FPGA development
-
-### Steps
-
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/yourusername/UART-Interface-Projects.git
-   cd UART-Interface-Projects
-   ```
 
 2. **Open Vivado Design Suite:**
    - Launch the Xilinx Vivado Design Suite on your computer.
@@ -109,4 +72,5 @@ UART-Interface-Projects/
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ```
+
 
