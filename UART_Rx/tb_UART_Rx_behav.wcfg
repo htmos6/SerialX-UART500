@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_UART_Rx_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_UART_Rx" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="211,159,990 ps"></ZoomStartTime>
+      <ZoomEndTime time="211,160,003 ps"></ZoomEndTime>
+      <Cursor1Time time="211,160,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="194"></NameColumnWidth>
+      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_UART_Rx/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/rx_line_i" type="logic">
+      <obj_property name="ElementShortName">rx_line_i</obj_property>
+      <obj_property name="ObjectShortName">rx_line_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/rx_line_o" type="array">
+      <obj_property name="ElementShortName">rx_line_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_line_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/rx_completed_o" type="logic">
+      <obj_property name="ElementShortName">rx_completed_o</obj_property>
+      <obj_property name="ObjectShortName">rx_completed_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/c_clk_frequency" type="other">
+      <obj_property name="ElementShortName">c_clk_frequency</obj_property>
+      <obj_property name="ObjectShortName">c_clk_frequency</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/c_baud_rate" type="other">
+      <obj_property name="ElementShortName">c_baud_rate</obj_property>
+      <obj_property name="ObjectShortName">c_baud_rate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/c_clk_period" type="other">
+      <obj_property name="ElementShortName">c_clk_period</obj_property>
+      <obj_property name="ObjectShortName">c_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/c_baud_rate_period" type="other">
+      <obj_property name="ElementShortName">c_baud_rate_period</obj_property>
+      <obj_property name="ObjectShortName">c_baud_rate_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/c_hex43" type="array">
+      <obj_property name="ElementShortName">c_hex43[10:0]</obj_property>
+      <obj_property name="ObjectShortName">c_hex43[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/c_hexA5" type="array">
+      <obj_property name="ElementShortName">c_hexA5[10:0]</obj_property>
+      <obj_property name="ObjectShortName">c_hexA5[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_UART_Rx/uut/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+</wave_config>
