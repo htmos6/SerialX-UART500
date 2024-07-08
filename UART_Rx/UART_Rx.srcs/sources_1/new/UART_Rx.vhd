@@ -6,7 +6,7 @@ entity UART_Rx is
 generic 
 (
 	c_clk_frequency : integer := 100_000_000;
-	c_baud_rate : integer := 115_800
+	c_baud_rate : integer := 115_200
 );
 port 
 (
@@ -16,8 +16,6 @@ port
 	rx_completed_o : out std_logic
 );
 end entity;
-
-
 
 
 architecture Behavioral of UART_Rx is
@@ -74,8 +72,7 @@ begin
 						bit_counter <= bit_counter + 1;
 					end if;
 					
-					rx_line_SHR(0) <= rx_line_i;
-					rx_line_SHR(7 downto 1) <= rx_line_SHR(6 downto 0);
+					rx_line_SHR  <= rx_line_i & rx_line_SHR(7 downto 1);
 					bit_timer <= 0;			
 				else
 					bit_timer <= bit_timer + 1;
@@ -104,17 +101,11 @@ begin
 				else
 					bit_timer <= bit_timer + 1;
 				end if;
-				
-				
 		end case;
 		
 		
 	end if;
 	end process;
-
-
-
-
 
 
 end architecture;
