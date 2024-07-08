@@ -77,12 +77,20 @@ begin
 		wait until falling_edge(clk_i);
 		data_i <= x"51";
 		start_i <= '1';
-		
 		wait for c_clk_period;
 		start_i <= '0';
+		wait for 1.2 ms;
 		
+		
+		-- Update signals @ the falling_edge to proove design compansates requirements.
+		wait until falling_edge(clk_i);
+		data_i <= x"A3";
+		start_i <= '1';
+		wait for c_clk_period;
+		start_i <= '0';
 		wait for 1.2 ms;
 
+	
 	end process;
 
 
