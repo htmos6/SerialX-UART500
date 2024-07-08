@@ -67,6 +67,19 @@ UART-Interface-Projects/
 - **UART_Rx:** Connect the `rx_line_i` input to the UART line you want to receive data from. The received data will be available on `rx_line_o` and `rx_completed_o` will indicate when data reception is complete.
 - **UART_Tx:** Connect the `data_i` input to the data you want to transmit. The `start_i` signal will initiate the transmission, and the `tx_line_o` will output the transmitted data. The `tx_completed_o` signal will indicate when data transmission is complete.
 
+## Serial Monitor
+
+- **HTerm**: HTerm is a terminal program for serial communication. To use it, follow these steps:
+
+ 1. Connect your FPGA to Vivado.
+ 2. Start running the transmitter code on the FPGA.
+ 3. Send data serially to a Windows or Linux machine.
+ 4. Use HTerm to observe the received data from the serial monitor.
+
+    
+![image](https://github.com/htmos6/SerialX-UART500/assets/88316097/c471d192-e672-4129-929d-4c1f34ad5b09)
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
